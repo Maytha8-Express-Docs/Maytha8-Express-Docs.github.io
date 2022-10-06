@@ -1,1 +1,1 @@
-This document might be outdated relative to the documentation in English. For the latest updates, please refer to the <a href="/">documentation in English</a>.
+ <a href="/">الوثاإق في الإنجليزي</a>.هذه الوثيقه قد يكون قديما مقارنة بالتوثيق الإنجليزيه. لآخر التحديثات، إذهب إلى
