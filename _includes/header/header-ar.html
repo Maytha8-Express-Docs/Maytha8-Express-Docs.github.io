@@ -1,0 +1,175 @@
+<header>
+  <div id="blm-banner">
+    Black Lives Matter. <br>
+    <a id="blm-donate"  href="https://support.eji.org/give/153413/#!/donation/checkout">Support the Equal Justice Initiative</a>.
+  </div>
+  <div id="mobile-menu">
+      <div id="nav-button" class="fa fa-bars fa-2x button"></div>
+  </div>
+  <section id="logo"><a href="/" class="express">Express</a>
+  </section>
+  <div id="navbar">
+      <input id="q" placeholder="🔎 search">
+      <ul id="navmenu">
+          <li><a href="/" id="home-menu"{% if page.menu == 'home' %} class="active"{% endif %}>الرئيسية</a></li>
+          <li>
+              <ul id="getting-started-menu" class="menu">
+                  <li><a href="/{{ page.lang }}/starter/installing.html"{% if page.menu == 'starter' %} class="active"{% endif %}>بدء استخدام</a>
+                      <ul>
+                          <li>
+                            <a href="/{{ page.lang }}/starter/installing.html">
+                              تثبيت
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/starter/hello-world.html">
+                              مرحبا بالعالم
+                            </a>
+                          </li>
+                          <li>
+                          <a href="/{{ page.lang }}/starter/generator.html">
+                            منشئ Express
+                          </a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/starter/basic-routing.html">
+                              التوجيه البصيط
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/starter/static-files.html">
+                              ملفات ثابتة
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/starter/examples.html">
+                              امثلة اكثر
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/starter/faq.html">
+                              أسئلة متكررة
+                            </a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <ul id="guide-menu" class="menu">
+                  <li><a href="/{{ page.lang }}/guide/routing.html"{% if page.menu == 'guide' %} class="active"{% endif %}>مرشد</a>
+                      <ul>
+                          <li><a href="/{{ page.lang }}/guide/routing.html">التوجيه</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/guide/writing-middleware.html">كتابة الوسائط</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/guide/using-middleware.html">إستغدام الوسائط</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/guide/overriding-express-api.html">تجاوز الExpress API</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/guide/using-template-engines.html">إستغدام مكركات لالقوالب</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/guide/error-handling.html">التعامل مع الاخطاء</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/guide/debugging.html">التصحيح</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/guide/behind-proxies.html">Express خلف الوكلاء</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/guide/migrating-4.html">التحرك إلى Express 4</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/guide/migrating-5.html">التحرك إلى Express 5</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/guide/database-integration.html">الدمج مع قواعد بيانات</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <ul id="application-menu" class="menu">
+                  <li><a href="/{{ page.lang }}/4x/api.html"{% if page.menu == 'api' %} class="active"{% endif %}>مرجع الAPI</a>
+                      <ul>
+                          <li><a href="/{{ page.lang }}/5x/api.html">5.x (بيتا)</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/4x/api.html">4.x</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/3x/api.html">3.x (مهمل)</a>
+                          </li>
+                          <li><a href="/2x/">2.x (مهمل)</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <ul id="advanced-topics-menu" class="menu">
+                  <li><a href="/{{ page.lang }}/advanced/developing-template-engines.html"{% if page.menu == 'advanced' %} class="active"{% endif %}>المواضيع المتقدمة</a>
+                      <ul>
+                          <li><a href="/{{ page.lang }}/advanced/developing-template-engines.html">محركات للقوالب</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/advanced/pm.html">مودراء العمليات</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/advanced/security-updates.html">تحديثات امنية</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/advanced/best-practice-security.html">افضل الممارسات للأامان</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/advanced/best-practice-performance.html">افضل الممارسات للأداء</a>
+                          </li>
+                          <li><a href="/{{ page.lang }}/advanced/healthcheck-graceful-shutdown.html">الفحوصات الصحية والإغلاق الرشيقة</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <ul id="resources-menu" class="menu">
+                  <li><a href="/{{ page.lang }}/resources/glossary.html"{% if page.menu == 'resources' %} class="active"{% endif %}>المصادر</a>
+                      <ul>
+                          <li>
+                            <a href="/{{ page.lang }}/resources/community.html">الإجتماع</a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/resources/glossary.html">قائمة المصطلحات</a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/resources/template-engines.html">محركات للقوالب<</a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/resources/middleware.html">الوسائط</a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/resources/utils.html">وحدات منفعة</a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/resources/frameworks.html">الأطر</a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/resources/companies-using-express.html">شركات يستغدمون Express</a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/resources/open-source-using-express.html">مشاريع مفتوحة المصدر</a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/resources/learning.html">التعلم الإضافي</a>
+                          </li>
+                          <li>
+                            <a href="/{{ page.lang }}/resources/contributing.html">المساهمة لExpress</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <!--
+          <li>
+              <ul id="changelog-menu" class="menu">
+                  <li><a href="/{{ page.lang }}/changelog/4x.html"{% if page.menu == 'changelog' %} class="active"{% endif %}>Changelog</a>
+                      <ul>
+                          <li><a href="/{{ page.lang }}/changelog/4x.html">4.x</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+        -->
+      </ul>
+  </div>
+</header>
